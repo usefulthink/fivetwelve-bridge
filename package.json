@@ -1,6 +1,6 @@
 {
   "name": "fivetwelve-bridge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bridge to connect the fivetwelve library running in the browser to a server handling dmx-interfaces",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,12 @@
     "build": "npm-run-all build:clean build:mkdir -p build:html build:client",
     "prepublish": "npm run build"
   },
-  "keywords": ["fivetwelve", "fivetwelve-driver", "dmx", "browser"],
+  "keywords": [
+    "fivetwelve",
+    "fivetwelve-driver",
+    "dmx",
+    "browser"
+  ],
   "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
