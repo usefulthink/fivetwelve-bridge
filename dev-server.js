@@ -5,11 +5,8 @@ require('babel-register')({
 
 const {initFivetwelveBridge} = require('./index');
 const {DmxOutput} = require('fivetwelve');
-
-const blessed = require('blessed');
-const colormap = require('colormap');
-
 const CliDebugDriver = require('fivetwelve-cli-debug-driver').default;
+
 const output = new DmxOutput(new CliDebugDriver());
 output.start(1000/30);
 
