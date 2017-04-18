@@ -11,6 +11,10 @@ care of two things:
  - automatically establishes the websocket-connection for the dmx-data
    from the browser to the server
 
+## install
+
+    npm install --save fivetwelve-bridge
+
 ## usage
 
 ### server-side
