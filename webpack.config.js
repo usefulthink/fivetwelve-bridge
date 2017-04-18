@@ -19,7 +19,7 @@ module.exports = {
       loader: 'babel-loader',
       options: {
         plugins: [],
-        presets: [['env', {targets: {chrome: 54}}]]
+        presets: ['env']
       }
     }]
   }
