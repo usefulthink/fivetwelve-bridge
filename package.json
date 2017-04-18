@@ -4,13 +4,14 @@
   "description": "bridge to connect the fivetwelve library running in the browser to a server handling dmx-interfaces",
   "main": "index.js",
   "scripts": {
+    "build:clean": "rm -rf build",
     "build:mkdir": "mkdir -p build",
     "build:html": "cp client/index.html build/index.html",
     "build:client": "webpack -p",
     "dev:client": "webpack -d --watch >> build/dev-client.log 2>&1",
     "dev:server": "babel-node --inspect dev-server.js",
     "start": "npm-run-all --silent build:mkdir build:html -p dev:client dev:server",
-    "build": "npm-run-all build:mkdir -p build:html build:client",
+    "build": "npm-run-all build:clean build:mkdir -p build:html build:client",
     "prepublish": "npm run build"
   },
   "keywords": ["fivetwelve", "fivetwelve-driver", "dmx", "browser"],
