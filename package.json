@@ -23,7 +23,10 @@
   "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
+    "http-server": "^0.10.0",
     "node-static": "^0.7.9",
+    "prettier": "^1.7.4",
+    "readable-stream": "^2.2.9",
     "websocket-stream": "^4.0.0"
   },
   "devDependencies": {

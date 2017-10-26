@@ -7,3 +7,4 @@ const websocketUrl = scriptTag.src.replace(/http:\/\/([^\/]*)/, 'ws://$1');
 
 window.fivetwelve = fivetwelve;
 window.fivetwelve.driver = initFivetwelveClient(websocketUrl);
+window.fivetwelve.output = new fivetwelve.DmxOutput(fivetwelve.driver);
